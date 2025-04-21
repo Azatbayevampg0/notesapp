@@ -1,6 +1,5 @@
 import { Dialog, DialogTitle, DialogHeader, DialogContent } from "@/components/ui/dialog"
 import instance from "@/server/api"
-import type { INote } from "@/models/note.type"
 import { Input } from "@/components/ui/input"
 import { Switch } from "@/components/ui/switch"
 import { Button } from "@/components/ui/button"
@@ -10,6 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Separator } from "@/components/ui/separator"
 import { Edit2, MoonIcon, PlusIcon, SearchIcon, Trash2, X } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { INote } from '@/models/note.taype'
 
 export const NotesPage = () => {
   const [isDialogOpen, setIsDialogOpen] = useState<boolean>(false)
